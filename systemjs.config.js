@@ -22,8 +22,14 @@
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
       // other libraries
-      'rxjs':                      'npm:rxjs',
+      'rxjs': 'npm:rxjs',
+      'jquery': 'npm:jquery',
+      'bootstrap': 'npm:bootstrap',
       'angular-in-memory-web-api': 'npm:angular-in-memory-web-api',
+      'select2': 'npm:select2',
+      'ng2-select2': 'npm:ng2-select2',
+      'ng2-uploader': 'npm:ng2-uploader',
+      'flatpickr': 'npm:flatpickr',
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
@@ -31,12 +37,36 @@
         main: './main.js',
         defaultExtension: 'js'
       },
+      jquery: {
+        main: './dist/jquery',
+        defaultExtension: 'min.js'
+      },
+      bootstrap: {
+        main: './dist/js/bootstrap',
+        defaultExtension: 'min.js'
+      },
       rxjs: {
         defaultExtension: 'js'
       },
       'angular-in-memory-web-api': {
         main: './index.js',
         defaultExtension: 'js'
+      },
+      'select2': {
+        defaultExtension: 'min.js',
+        main: './dist/js/select2'
+      },
+      'ng2-select2': {
+        defaultExtension: 'js',
+        main: 'ng2-select2'
+      },
+      'ng2-uploader': {
+        defaultExtension: 'js',
+        main: 'ng2-uploader'
+      },
+      'flatpickr': {
+        defaultExtension: 'min.js',
+        main: './dist/flatpickr'
       }
     }
   });
