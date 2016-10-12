@@ -8,7 +8,9 @@ import 'bootstrap-daterangepicker';
 @Component({
   moduleId: module.id,
   selector: 'datetime-picker',
-  templateUrl: 'datetimepicker.component.html'
+  templateUrl: 'datetimepicker.component.html',
+  styleUrls: ['datetimepicker.component.css']
+
 })
 export class datetimePickerComponent implements OnInit {
 
